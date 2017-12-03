@@ -5,7 +5,7 @@ def navigation?
     params[:controller] == "pages"
     return true
   else
-    return true
+    return false
   end
 end
 

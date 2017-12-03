@@ -10,7 +10,7 @@
       <link rel="shortcut icon" href="theme/images/favicon.ico">
 
       <!-- stylesheets -->
-      <link rel="stylesheet" type="text/css" href="theme/scss/bootstrap/bootstrap.css" />
+      <link rel="stylesheet" type="text/css" href="assets/pages/scss/bootstrap/bootstrap.css" />
       <link rel="stylesheet" type="text/css" href="theme/dist/theme.min.css" />
 
       <!-- javascript -->
@@ -26,6 +26,8 @@
   <body>
     <% if navigation? == true %>
     <%= render 'shared/navbar' %>
+    <% else %>
+    <%= render 'shared/navbarnavigation' %>
     <% end %>
     <%= yield %>
     <%= render 'shared/footer' %>
